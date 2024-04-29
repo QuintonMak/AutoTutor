@@ -1,0 +1,44 @@
+.aiWindow {
+    height: 75vh;
+    text-align: left;
+
+    display: float;
+    justify-content: end;
+    flex-direction: column;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    overflow-x: auto;
+}
+.aiWindow * {
+    overflow-anchor: none;
+}
+
+#anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+.aiWindow p {
+    margin: 5px;
+}
+
+.submitBox {
+    display: flex;
+    justify-content: space-between;
+}
+.submitBox .submitChild {
+    flex: 1 1 auto;
+}
+.submitBox button {
+    max-width: 175px;
+    flex: 1 1 auto;
+   
+}
+
+.textBox {
+    margin: 3px;
+    padding-left: 3px;
+    background-color: rgb(238, 238, 238);
+}

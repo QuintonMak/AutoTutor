@@ -1,3 +1,7 @@
+html, .App {
+  background-color: aliceblue;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pdfSubmit {
+  display: flex;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.aiBody input {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.aiBox {
+  margin: 0 3vw 3vw 3vw;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
 }
