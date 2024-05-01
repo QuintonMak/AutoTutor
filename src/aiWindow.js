@@ -37,7 +37,7 @@ function AiWindow() {
       // append the prompt to the current text
       const formJson = Object.fromEntries(formData.entries());
       console.log(formJson);
-      const prompt = "**You:** " + formJson.userInput;
+      const prompt = "You: " + formJson.userInput;
       let new_text = text + NL + prompt + NL;
       set_text(new_text);
 
@@ -49,7 +49,7 @@ function AiWindow() {
       }
 
       // generate completion
-      new_text += "**Gemini:**  ";
+      new_text += "Gemini: ";
       const outputStream = await generateStream(prompt);
       for await (const chunk of outputStream) {
         try {

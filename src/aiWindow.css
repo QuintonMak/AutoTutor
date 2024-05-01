@@ -1,5 +1,5 @@
 .aiWindow {
-    height: 70vh;
+    height: 75vh;
     text-align: left;
 
     display: float;
@@ -37,10 +37,11 @@
 
 .textBox {
     margin: 0 5px 8px 5px;
-    background-color:rgb(235, 238, 245);
-    padding: 0 5px;
+    padding-left: 3px;
+    background-color: rgb(238, 238, 238);
 }
 
 .textBox p {
+    padding: 0;
     margin: 0;
 }
