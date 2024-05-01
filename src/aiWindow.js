@@ -1,10 +1,8 @@
 import {generate, generateStream } from "./genai.js";
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './aiWindow.css'
 import PdfSubmit from "./pdfSubmit.js";
-import 'showdown';
-import Showdown from "showdown";
-// import parse from 'react-html-parser';
+import Markdown from 'react-markdown'
 
 function AiWindow() {
     let [text, set_text] = useState('')
@@ -16,11 +14,11 @@ function AiWindow() {
       return `unique_key_${keynum}`;
     }
 
-    let converter = new Showdown.Converter();
-
     function newTextbox(t) {
-      t = t.replaceAll("*", "");
-      return (<p className='textBox' key={getKey()}>{t}</p>)
+      return (<div className='textBox' key={getKey()}>
+                <Markdown>
+                  {t}
+                </Markdown></div>)
     }
 
 

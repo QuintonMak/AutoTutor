@@ -46,6 +46,7 @@ html, .App {
   border-color: black;
   border-width: 1px;
   border-style: solid;
+  background-color: rgb(252, 246, 239);
 }
 
 .aiBody input {

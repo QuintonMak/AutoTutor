@@ -68,15 +68,13 @@ async function setContext(context) {
     console.log(context);
 
     let contextPrompt = `
-    Do not use Markdown. Do not use Markdown. Do not use Markdown.
-    You used markdown when you were instructed not to. Please do not use markdown.
     You are to use proper punctuation as much as possible. :,.
     You are to respond in full sentences.
     You are to avoid bullet points and broken sentences.
     You are to avoid having a title in your response.
     You are to ensure correctness, non-toxicity, and helpfulness.
     You are a subject matter in the following information given. 
-    You are to respond based on the following information.
+    Any new responses should refer to the following information given.
     Following information:
     ${context}
     `
