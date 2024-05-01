@@ -1,4 +1,4 @@
-import {generate, generateStream } from "./genai.js";
+import {generateStream } from "./genai.js";
 import React, { useState } from 'react';
 import './aiWindow.css'
 import PdfSubmit from "./pdfSubmit.js";

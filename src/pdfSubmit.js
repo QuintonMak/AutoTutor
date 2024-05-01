@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import pdftotext from 'react-pdftotext'
+import pdfToText from 'react-pdftotext'
 import { setContext } from './genai.js';
 
 function PdfSubmit(props) {
   
   function set_pdf_text(event) {
     const file = event.target.files[0];
-    pdftotext(file)
+    pdfToText(file)
       .then(text => {
         props.set_pdf(text);
         return text;
